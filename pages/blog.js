@@ -136,7 +136,7 @@ export const getServerSideProps = async pageContext => {
 
 import React, { useState, useEffect } from "react";
 import imageUrlBuilder from "@sanity/image-url";
-import { sanityClient } from "../pages/sanityClient";
+import { sanityClient } from "../lib/sanityClient";
 import Nav from "../components/Nav"
 import PostCard from "../components/PostCard"
 
