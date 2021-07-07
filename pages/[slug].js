@@ -52,7 +52,7 @@ export const Post = ({ title, body, image, publishedAt, description, content }) 
                                 <li key={person.name} className="sm:py-8">
                                     <div className="flex justify-center alignCenter gap-x-4 gap-y-4">
                                         <div className="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4 flex justify-center ">
-                                            <Image className="object-cover shadow-lg rounded-full w-32 h-32 xl:w-32 xl:h-32" src={person.imageUrl} />
+                                            <Image className="object-cover shadow-lg rounded-full w-32 h-32 xl:w-32 xl:h-32" src={person.imageUrl} alt="" />
                                         </div>
                                         <div className="sm:col-span-2">
                                             <div className="space-y-4">

@@ -42,9 +42,9 @@ const About = () => {
                                 </div>
                                 <div className="info__contacts">
                                     <div className="row">
-                                        {state.map((info) => (
+                                        {state.map((info,index) => (
                                             <div className="col-6">
-                                                <strong key={title}>{info.title}</strong>
+                                                <strong key={index}>{info.title}</strong>
                                                 <p>{info.text}</p>
                                             </div>
                                         ))}
