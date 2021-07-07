@@ -1,5 +1,7 @@
 import Nav from "../components/Nav"
 import React, {useEffect, useState} from 'react';
+import Image from "next/image";
+import Link from "next/link"
 
 function Main() {
 
@@ -21,10 +23,10 @@ function Main() {
                         <span className="font-quicksand font-light lg:text-3xl mt-0">Take a look around plis.</span>
                     </h1>
                     <p className="text-base text-gray-700">Web developer </p>
-                    <a href="/about" className="inline-block bg-lightGreen font-nunito text-white tracking-wider px-10 py-5 rounded-full shadow-lg uppercase text-lg tracking-wide mt-5 cursor-pointer">Lezz go!</a>
+                    <Link href="/about" className="inline-block bg-lightGreen font-nunito text-white tracking-wider px-10 py-5 rounded-full shadow-lg uppercase text-lg tracking-wide mt-5 cursor-pointer">Lezz go!</Link>
                 </div>
 
-                <img src= "food.svg"
+                <Image src= "food.svg"
                      alt="photo"
                      className="w-screen lg:max-w-2xl sm:w-7/12 lg:pl-12"
                 />

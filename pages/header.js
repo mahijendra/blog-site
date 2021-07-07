@@ -1,3 +1,4 @@
+/*
 import React from 'react'
 import Navbar from "../components/Navbar"
 import {FaGithub, FaLinkedin, FaTwitch, FaTwitter} from "react-icons/fa";
@@ -136,3 +137,4 @@ const Header = () => {
 }
 
 export default Header
+*/

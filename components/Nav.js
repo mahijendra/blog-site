@@ -23,7 +23,7 @@ export default function Example() {
                         <div className="relative h-16 flex justify-between">
                             <div className="relative z-10 px-2 flex lg:px-0">
                                 <div className="flex-shrink-0 flex items-center">
-                                    <a  href="/main" className="text-2xl font-nunito font-light text-customGreen">Hamilton</a>
+                                    <Link  href="/main" className="text-2xl font-nunito font-light text-customGreen">Hamilton</Link>
                                 </div>
                             </div>
 
@@ -79,7 +79,7 @@ export default function Example() {
                     <Disclosure.Panel as="nav" className="lg:hidden" aria-label="Global">
                         <div className="pt-2 pb-3 px-2 space-y-1">
                             {navigation.map((item) => (
-                                <a
+                                <Link
                                     key={item.name}
                                     href={item.href}
                                     className={classNames(
@@ -89,7 +89,7 @@ export default function Example() {
                                     aria-current={item.current ? 'page' : undefined}
                                 >
                                     {item.name}
-                                </a>
+                                </Link>
                             ))}
                         </div>
 
