@@ -8,11 +8,12 @@ const About = () => {
         text:
             "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     });
+
     const [state] = React.useState([
         { id: 1, title: "Name:", text: "B V K Mahijendra " },
-        { id: 2, title: "Email: ", text: "bvkmahijendra@gmail.com" },
-        { id: 3, title: "Phone: ", text: "+(91)-7330760052" },
-        { id: 4, title: "Linkedin: ", text: "Mahijendra" },
+        { id: 2, title: "Email: ", text: "random@gmail.com" },
+        { id: 3, title: "Phone: ", text: "+(91)-3434343" },
+        { id: 4, title: "Linkedin: ", text: "I don't know" },
     ])
     return (
         <>
@@ -35,15 +36,14 @@ const About = () => {
                                 <h1 className="mainHeader font-nunito text-customGreen">Hello There!</h1>
                                 <div className="about__info-p1 font-nunito text-customGreen ">
                                     It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
                                 </div>
                                 <div className="about__info-p1 font-quicksand">
                                     It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                                 </div>
                                 <div className="info__contacts">
                                     <div className="row">
-                                        {state.map((info) => (
-                                            <div className="col-6">
+                                        {state.map((info, id) => (
+                                            <div className="col-6" key={info.id}>
                                                 <strong>{info.title}</strong>
                                                 <p>{info.text}</p>
                                             </div>
