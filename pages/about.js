@@ -44,7 +44,7 @@ const About = () => {
                                     <div className="row">
                                         {state.map((info) => (
                                             <div className="col-6">
-                                                <strong key={info.title}>{info.title}</strong>
+                                                <strong key={title}>{info.title}</strong>
                                                 <p>{info.text}</p>
                                             </div>
                                         ))}
