@@ -42,7 +42,7 @@ const About = () => {
                                 </div>
                                 <div className="info__contacts">
                                     <div className="row">
-                                        {state.map((info, id) => (
+                                        {state.map((inf) => (
                                             <div className="col-6" key={info.id}>
                                                 <strong>{info.title}</strong>
                                                 <p>{info.text}</p>
