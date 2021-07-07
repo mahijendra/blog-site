@@ -1,6 +1,6 @@
 import React from "react";
-
 import Nav from "../components/Nav"
+import Image from "next/image"
 
 const About = () => {
     const [header] = React.useState({
@@ -27,7 +27,7 @@ const About = () => {
                     <div className="row h-650 alignCenter ">
                         <div className="col-6">
                             <div className="main_img">
-                                <img className="img_dimensions max-w-2xl" src="food.svg"/>
+                                <Image className="img_dimensions max-w-2xl" src="food.svg"/>
                             </div>
                         </div>
                         <div className="col-6">
@@ -42,9 +42,9 @@ const About = () => {
                                 </div>
                                 <div className="info__contacts">
                                     <div className="row">
-                                        {state.map((info) => (
+                                        {state.map((info,id) => (
                                             <div className="col-6">
-                                                <strong>{info.title}</strong>
+                                                <strong key={id}>{info.title}</strong>
                                                 <p>{info.text}</p>
                                             </div>
                                         ))}

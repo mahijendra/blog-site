@@ -1,6 +1,7 @@
 import {Fragment} from 'react'
 import {Disclosure, Menu, Transition} from '@headlessui/react'
 import {BellIcon, MenuIcon, XIcon} from '@heroicons/react/outline'
+import Link from "next/link"
 
 
 const navigation = [
@@ -28,7 +29,7 @@ export default function Example() {
 
                             <nav className="hidden lg:py-4 lg:flex lg:space-x-8 font-quicksand text-lg font-black tracking-normal" aria-label="Global">
                                 {navigation.map((item) => (
-                                    <a
+                                    <Link
                                         key={item.name}
                                         href={item.href}
                                         className={classNames(
@@ -38,7 +39,7 @@ export default function Example() {
                                         aria-current={item.current ? 'page' : undefined}
                                     >
                                         {item.name}
-                                    </a>
+                                    </Link>
                                 ))}
                             </nav>
 
